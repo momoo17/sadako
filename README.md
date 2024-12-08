@@ -1,6 +1,6 @@
-# Sadako Game - README
+# README
 
-## 🎮 What is this?
+## 🎮 Sadako Game
 This is a fun and spooky little game inspired by Sadako! The game detects motion in a video feed and challenges you to survive while Sadako moves around the screen. If a motion is detected in the red square area, it means... you're dead! Your score keeps track of how many times you "die."
 
 ## 📂 File Overview
