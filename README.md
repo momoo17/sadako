@@ -1,90 +1,49 @@
-# README
+# Sadako Game - README
 
-## Sadako Game
+## 🎮 What is this?
+This is a fun and spooky little game inspired by Sadako! The game detects motion in a video feed and challenges you to survive while Sadako moves around the screen. If a motion is detected in the red square area, it means... you're dead! Your score keeps track of how many times you "die."
 
-This project is a simple motion detection-based game created using the Processing framework. The game involves detecting changes in a live video feed and interacting with a "Sadako" image that moves around the screen.
+## 📂 File Overview
+- **`prototype3.pde`**  
+  The main Processing script that powers the game. It handles:
+  - Motion detection.
+  - Drawing Sadako's image as she "haunts" you.
+  - Game logic, including scoring and red square movement.
 
----
+- **`sadako.png`**  
+  The Sadako image that moves around the screen, making the game both scary and exciting!
 
-## Project Structure
+## 🚀 How to Play
+1. **Setup**:  
+   Make sure you have [Processing](https://processing.org/download/) installed on your computer.
 
-```
-├── prototype3.pde  # Main Processing sketch file
-└── sadako.png      # Image of "Sadako" used in the game
-```
+2. **Run the Game**:  
+   Open `prototype3.pde` in Processing and hit the ▶️ play button.
 
----
+3. **Controls**:  
+   Use the following keys to interact with the game:
+   - **1/2**: Adjust the motion detection threshold.
+   - **b**: Reset the background and score.
+   - **3**: Increase the speed of Sadako.
+   - **4**: Decrease the speed of Sadako.
 
-## Requirements
+4. **Objective**:  
+   Avoid motion in the red square area, or your death count (`score`) will go up! How long can you survive?
 
-1. **Processing IDE**: Download and install the Processing IDE from [Processing.org](https://processing.org/).
-2. **Processing Video Library**: Install the video library via the Processing Library Manager.
+## 🛠 Features
+- **Motion Detection**: Detects brightness changes in the video feed to determine motion.
+- **Dynamic Speed**: Sadako randomly changes speed every 60 frames to keep you on your toes.
+- **Visual Feedback**: When motion is detected, the screen flashes red, and your death count increases.
+- **Customizable Settings**: Adjust thresholds and reset the background to make the game easier or harder.
 
----
+## 🌟 Future Improvements
+- Add sound effects for a more immersive experience.
+- Include different levels of difficulty.
+- Introduce new characters or environments.
 
-## How to Run
-
-1. **Setup**:
-   - Clone or download the repository.
-   - Open `prototype3.pde` in the Processing IDE.
-
-2. **Ensure File Placement**:
-   - Place `sadako.png` in the same directory as `prototype3.pde`.
-
-3. **Run the Sketch**:
-   - Click the "Play" button in the Processing IDE to start the game.
-
----
-
-## Game Instructions
-
-1. **Gameplay**:
-   - A "Sadako" image moves across the screen. Its position changes based on random speed adjustments.
-   - The game detects brightness changes in the live video feed. When significant changes are detected within the "Sadako" image's bounding box, the game considers it as "you died."
-
-2. **Controls**:
-   - Press `1`: Increase the brightness detection threshold.
-   - Press `2`: Decrease the brightness detection threshold.
-   - Press `b`: Reset the background brightness and the score.
-   - Press `3`: Increase the movement speed of "Sadako."
-   - Press `4`: Decrease the movement speed of "Sadako."
+## 🖼 Sadako Image
+The game uses the image of Sadako, which you can customize by replacing `sadako.png` with your preferred scary image. Just make sure the image is 100x100 pixels for the best results!
 
 ---
 
-## Features
-
-1. **Motion Detection**:
-   - The game continuously monitors brightness changes in the live video feed.
-   - Changes above a set threshold trigger a game event.
-
-2. **Interactive Graphics**:
-   - "Sadako" moves dynamically and bounces back when hitting the screen edges.
-   - Brightness differences in the video are visualized with red highlights.
-
-3. **Dynamic Speed**:
-   - The speed of "Sadako" changes randomly at regular intervals, making the gameplay unpredictable.
-
----
-
-## File Details
-
-### `prototype3.pde`
-This file contains the main logic for the game, including:
-- Video capture setup.
-- Motion detection logic.
-- Score tracking.
-- Speed and movement management.
-
-### `sadako.png`
-An image file used to represent "Sadako." Download it from [this link](https://raw.githubusercontent.com/momoo17/sadako/594d9b06daf2071622d728c0c6f5b04d2fd7f6a1/sadako.png).
-
----
-
-## Notes
-
-- Ensure your webcam is functional and accessible by the Processing IDE.
-- Modify the game parameters, such as `thresh_`, to adjust sensitivity and improve gameplay.
-
----
-
-Enjoy the game! If you have any questions or suggestions, feel free to reach out.
+Have fun, and try not to let Sadako get you! 👻
